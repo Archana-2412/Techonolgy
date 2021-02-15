@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 70%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Top Technologies</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Artifical Intelligence</a></li>
+      <li><a href="#">Data Science</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Artifical Intelligence</h1>
+    <p>Artificial intelligence (AI) is the technology used for equipping computer systems with the ability to make decisions like humans. Being one of the trending technologies, when AI programs are fed to systems, the aim is to mimic human intelligence for performing complex tasks such as pattern recognition, speech recognition, weather forecast and medical diagnosis.</p>
+    <p>AI is used in navigation based applications like Uber, voice assistants like Siri, video streaming services like Netflix, IoT devices and in search engines like Google and Bing. AI helps in automating tasks such as traffic, scheduling trains, making business predictions and designing driverless cars!</p>
+  </article>
+  <article>
+      <h1>Data Science</h1>
+      <p>Next up in the list of latest technology concepts is not surprisingly Data Science. Data Science is the technology that helps to make sense of complicated data. You know that data is produced in a humungous amount every day by companies. This includes business data, sales data, customer profile information, server data, and financial figures. </p>
+      <p>Most of this data is in the form of huge data sets that are unstructured. The role of data scientists is to convert these unstructured data sets into structured datasets. Then, these data sets can be analyzed to identify patterns and trends. These patterns are useful for understanding the company’s business performance, customer retention, and how these areas can be improved.</p>
+
+  </article>
+</section>
+
+<footer>
+  <p>Narayanpet, TS, India</p>
+</footer>
+
+</body>
+</html>
